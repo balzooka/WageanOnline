@@ -1,0 +1,22 @@
+<h1>Welcome to Wagean Online</h1>
+
+<%= form_with scope: :shop, url: shops_path, local: true do |form| %>
+    <p>
+      <%= form.label :name %><br>
+      <%= form.text_field :name %>
+    </p>
+
+    <p>
+      <%= form.label :phone_number %><br>
+      <%= form.text_field :phone_number%>
+    </p>
+
+    <p>
+        <%= form.label :address %><br>
+        <%= form.text_area :address %>
+    </p>
+   
+    <p>
+      <%= form.submit %>
+    </p>
+  <% end %>
